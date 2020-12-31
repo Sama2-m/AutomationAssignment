@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WebSite TestCases]">
+  <test thread-count="5" name="WebSite TestCases(failed)">
+    <classes>
+      <class name="websiteTestCases.LoginTest">
+        <methods>
+          <include name="loginSuccessfully"/>
+          <include name="closeBrowser"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- websiteTestCases.LoginTest -->
+      <class name="websiteTestCases.CartCheckOutTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="cartCheckOut"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- websiteTestCases.CartCheckOutTest -->
+      <class name="websiteTestCases.RegisterationTest">
+        <methods>
+          <include name="registerSuccessfully"/>
+          <include name="BeforeMethod"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- websiteTestCases.RegisterationTest -->
+    </classes>
+  </test> <!-- WebSite TestCases(failed) -->
+</suite> <!-- Failed suite [WebSite TestCases] -->
